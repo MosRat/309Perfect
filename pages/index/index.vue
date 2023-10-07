@@ -6,10 +6,10 @@
 		</view>
 		<view v-for="(v,i) in orders" >
 			<view class="order_info">
-				<view>{{v.student_name}}</view>
-				<view>{{v.order_date}}</view>
-				<view>{{v.time}}</view>
-				<view>{{v.active_type}}</view>
+				<view class="order_bar">{{v.student_name}}</view>
+				<view class="order_bar">{{v.order_date}}</view>
+				<view class="order_bar">{{v.time}}</view>
+				<view class="order_bar">{{v.active_type}}</view>
 			</view>
 		</view>
 	</view>
@@ -63,5 +63,14 @@
 	.order_info{
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	.order_bar{
+		text-align: center;
+		margin: 5px;
+		padding: 2px;
+		border: #8f8f94;
+		
 	}
 </style>
